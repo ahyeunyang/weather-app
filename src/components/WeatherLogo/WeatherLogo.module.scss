@@ -1,0 +1,20 @@
+@use '../../styles/tokens/tokens' as token;
+
+.logo {
+  display: block;
+  flex: none;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.small {
+  width: token.$logo-size-small;
+}
+
+.medium {
+  width: token.$logo-size-medium;
+}
+
+.large {
+  width: token.$logo-size-large;
+}

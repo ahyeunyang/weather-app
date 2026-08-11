@@ -1,0 +1,22 @@
+@use 'reset';
+@use 'tokens/color-tokens' as color;
+@use 'tokens/tokens' as token;
+
+:root {
+  color: color.$ink;
+  background: color.$sky-end;
+  font-family: token.$font-family-sans;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

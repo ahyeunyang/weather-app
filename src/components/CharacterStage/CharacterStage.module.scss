@@ -1,0 +1,12 @@
+@use '../../styles/tokens/tokens' as token;
+
+.stage {
+  width: min(84vw, token.$character-stage-width);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: pan-y;
+
+  &:active {
+    cursor: grabbing;
+  }
+}

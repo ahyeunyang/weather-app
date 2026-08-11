@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="215" height="251" viewBox="0 0 215 251" role="img" aria-label="snowy umbrella weather icon">
+  <defs>
+    <linearGradient id="canopy" x1="43" y1="94" x2="138" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC31B"/>
+      <stop offset="1" stop-color="#F7B800"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="41" y1="42" x2="139" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#349BD5"/>
+      <stop offset="1" stop-color="#55A9DC"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="91" y1="140" x2="76" y2="198" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6660DF"/>
+      <stop offset="1" stop-color="#5651CF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Three simple six-direction snowflakes -->
+  <g fill="none" stroke="url(#snow)" stroke-width="4" stroke-linecap="round">
+    <path d="M51 50V72M41.5 55.5L60.5 66.5M41.5 66.5L60.5 55.5"/>
+    <path d="M90 37V59M80.5 42.5L99.5 53.5M80.5 53.5L99.5 42.5"/>
+    <path d="M132 66V84M124.2 70.5L139.8 79.5M124.2 79.5L139.8 70.5"/>
+  </g>
+  <g fill="#55A9DC">
+    <circle cx="46" cy="83" r="4"/>
+    <circle cx="74" cy="73" r="4"/>
+    <circle cx="116" cy="57" r="4"/>
+  </g>
+
+  <!-- Umbrella canopy -->
+  <path d="M30 138C36 108 59 89 91 87C123 89 145 108 151 138C153 143 148 146 144 142C136 134 125 134 116 144C107 135 99 135 91 144C83 135 74 135 65 144C56 134 45 135 37 142C33 146 28 143 30 138Z" fill="url(#canopy)"/>
+  <path d="M91 88C79 104 71 124 65 143M91 88C103 104 111 124 116 143" fill="none" stroke="#EFB100" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+  <path d="M91 87V80" fill="none" stroke="#F1B300" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Handle -->
+  <path d="M91 143V184C91 200 71 201 71 186" fill="none" stroke="url(#handle)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

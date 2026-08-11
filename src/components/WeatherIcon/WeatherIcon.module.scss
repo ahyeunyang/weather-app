@@ -1,0 +1,27 @@
+@use '../../styles/tokens/tokens' as token;
+
+.icon {
+  display: block;
+  flex: none;
+  object-fit: contain;
+}
+
+.small {
+  width: token.$weather-icon-size-small;
+  height: token.$weather-icon-size-small;
+}
+
+.medium {
+  width: token.$weather-icon-size-medium;
+  height: token.$weather-icon-size-medium;
+}
+
+.large {
+  width: token.$weather-icon-size-large;
+  height: token.$weather-icon-size-large;
+}
+
+.hero {
+  width: token.$weather-icon-size-hero;
+  height: token.$weather-icon-size-hero;
+}
