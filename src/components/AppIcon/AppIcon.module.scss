@@ -1,0 +1,22 @@
+@use '../../styles/tokens/tokens' as token;
+
+.icon {
+  display: block;
+  flex: none;
+  color: inherit;
+}
+
+.small {
+  width: token.$app-icon-size-small;
+  height: token.$app-icon-size-small;
+}
+
+.medium {
+  width: token.$app-icon-size-medium;
+  height: token.$app-icon-size-medium;
+}
+
+.large {
+  width: token.$app-icon-size-large;
+  height: token.$app-icon-size-large;
+}

@@ -14,18 +14,24 @@ $font-size-caption: 0.72rem;
 $font-size-label: 0.78rem;
 $font-size-body: 1rem;
 $font-size-body-large: 1.08rem;
+$font-size-tab: 1.125rem;
+$font-size-heading: 1.5rem;
+$font-size-temperature: 5rem;
 $font-size-title-min: 2rem;
 $font-size-title-max: 4.5rem;
-$font-family-sans: Inter, Pretendard, 'Noto Sans KR', system-ui, -apple-system,
-  BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-sans: 'Pretendard Variable', Pretendard, -apple-system,
+  BlinkMacSystemFont, system-ui, 'Noto Sans KR', 'Segoe UI', sans-serif;
 $font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
 
 // 모서리 및 효과 토큰
 $border-width-thin: 0.0625rem;
 $radius-code: 0.375rem;
+$radius-small: 0.75rem;
+$radius-card: 1.5rem;
+$radius-navigation: 1.75rem;
 $radius-pill: 62.4375rem;
 $blur-glass: 1rem;
-$blur-glow: 4.375rem;
+$blur-logo-reveal: 0.5rem;
 
 // 레이아웃 토큰
 $viewport-min-width: 20rem;
@@ -33,13 +39,23 @@ $content-max-width: 67.5rem;
 $character-stage-width: 28.75rem;
 $intro-copy-width: 40rem;
 $description-width: 31.25rem;
-$glow-size: 35rem;
 $header-offset: 6rem;
 $header-offset-mobile: 4.75rem;
 $copy-overlap: -1.25rem;
 $breakpoint-tablet: 48rem;
+$app-content-max-width: 42rem;
+$bottom-navigation-max-width: 30rem;
+$bottom-navigation-height: 4.5rem;
+$bottom-navigation-feature-size: 3.75rem;
+$bottom-navigation-icon-size: 1.5rem;
+$touch-target-min: 3rem;
+$page-bottom-space: 7rem;
+$weather-character-max-width: 24rem;
 
 // 정적 에셋 크기 토큰
+$app-icon-size-small: 1rem;
+$app-icon-size-medium: 1.125rem;
+$app-icon-size-large: 1.25rem;
 $weather-icon-size-small: 2rem;
 $weather-icon-size-medium: 3rem;
 $weather-icon-size-large: 5rem;

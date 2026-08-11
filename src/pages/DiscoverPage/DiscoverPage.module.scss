@@ -1,0 +1,217 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/tokens/color-tokens' as color;
+@use '../../styles/tokens/tokens' as token;
+
+.page {
+  min-height: 100svh;
+  padding: max(token.$space-4, env(safe-area-inset-top)) token.$space-4
+    token.$page-bottom-space;
+  background: color.$background-page;
+  color: color.$ink;
+}
+
+.content {
+  width: min(100%, token.$app-content-max-width);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  min-height: token.$touch-target-min;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: token.$space-5;
+
+  button {
+    min-height: token.$touch-target-min;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: color.$ink-muted;
+    cursor: pointer;
+    font-size: token.$font-size-tab;
+    font-weight: 500;
+  }
+
+  button[aria-selected='true'] {
+    font-weight: 700;
+  }
+
+  button:nth-child(1)[aria-selected='true'] {
+    color: color.$temperature-high;
+  }
+
+  button:nth-child(2)[aria-selected='true'] {
+    color: color.$accent-mint;
+  }
+
+  button:nth-child(3)[aria-selected='true'] {
+    color: color.$temperature-low;
+  }
+}
+
+.search {
+  display: grid;
+  width: token.$touch-target-min;
+  height: token.$touch-target-min;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: color.$ink;
+
+  svg {
+    width: token.$app-icon-size-medium;
+    height: token.$app-icon-size-medium;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-width: 1.6;
+  }
+}
+
+.hero {
+  display: grid;
+  min-height: 17rem;
+  margin-top: token.$space-3;
+  padding: token.$space-5 0;
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  > div > span {
+    color: color.$temperature-high;
+    font-size: token.$font-size-caption;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+  }
+
+  h1 {
+    margin: token.$space-2 0;
+    font-size: token.$font-size-heading;
+    letter-spacing: -0.04em;
+    line-height: 1.25;
+  }
+
+  p {
+    max-width: 16rem;
+    margin: 0;
+    color: color.$ink-soft;
+    font-size: token.$font-size-label;
+    line-height: 1.5;
+  }
+
+  button {
+    display: flex;
+    min-height: token.$touch-target-min;
+    margin-top: token.$space-4;
+    padding: 0 token.$space-4;
+    align-items: center;
+    border: 0;
+    border-radius: token.$radius-pill;
+    background: color.$surface-card;
+    color: color.$ink;
+    font-size: token.$font-size-label;
+    font-weight: 700;
+    gap: token.$space-2;
+  }
+}
+
+.quickSection,
+.productSection {
+  margin-top: token.$space-6;
+}
+
+.sectionTitle,
+.productHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  span {
+    color: color.$ink-muted;
+    font-size: token.$font-size-caption;
+  }
+
+  h2 {
+    margin: token.$space-1 0 0;
+    font-size: token.$font-size-body-large;
+  }
+}
+
+.quickLinks {
+  display: grid;
+  margin-top: token.$space-4;
+  gap: token.$space-2;
+  grid-template-columns: repeat(4, 1fr);
+
+  button {
+    display: flex;
+    min-width: 0;
+    padding: 0;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    color: color.$ink-soft;
+    flex-direction: column;
+    font-size: token.$font-size-caption;
+    gap: token.$space-2;
+  }
+
+  button > span {
+    display: grid;
+    width: 100%;
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 50%;
+    background: color.$surface-muted;
+  }
+}
+
+.promotion {
+  display: grid;
+  min-height: 4rem;
+  margin-top: token.$space-5;
+  padding: token.$space-3 token.$space-4;
+  align-items: center;
+  border-radius: token.$radius-small;
+  background: color.$ink;
+  color: color.$light-main;
+  gap: token.$space-3;
+  grid-template-columns: auto 1fr auto;
+
+  svg {
+    color: color.$light-main;
+  }
+
+  p {
+    margin: 0;
+    font-size: token.$font-size-label;
+    line-height: 1.4;
+  }
+}
+
+.productGrid {
+  display: grid;
+  margin-top: token.$space-4;
+  gap: token.$space-3;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@include mixins.tablet-up {
+  .page {
+    padding-inline: token.$space-6;
+  }
+
+  .hero {
+    min-height: 20rem;
+    padding-block: token.$space-6;
+  }
+
+  .productGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

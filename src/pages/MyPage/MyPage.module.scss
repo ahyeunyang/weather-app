@@ -1,0 +1,108 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/tokens/color-tokens' as color;
+@use '../../styles/tokens/tokens' as token;
+
+.page {
+  min-height: 100svh;
+  padding: max(token.$space-6, env(safe-area-inset-top)) token.$space-4
+    token.$page-bottom-space;
+  background: linear-gradient(180deg, color.$background-page, color.$background-page-end);
+  color: color.$ink;
+}
+
+.content {
+  width: min(100%, token.$app-content-max-width);
+  margin: 0 auto;
+
+  header > span {
+    color: color.$accent-deep;
+    font-size: token.$font-size-caption;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  header h1 {
+    margin: token.$space-1 0 0;
+    font-size: token.$font-size-heading;
+  }
+}
+
+.profile {
+  display: flex;
+  margin-top: token.$space-6;
+  padding: token.$space-5;
+  align-items: center;
+  border: token.$border-width-thin solid color.$border-soft;
+  border-radius: token.$radius-card;
+  background: color.$surface-card;
+  box-shadow: 0 token.$space-1 token.$space-4 color.$shadow-card;
+  gap: token.$space-4;
+
+  h2 {
+    margin: 0;
+    font-size: token.$font-size-body-large;
+  }
+
+  p {
+    margin: token.$space-2 0 0;
+    color: color.$ink-soft;
+    font-size: token.$font-size-label;
+    line-height: 1.5;
+  }
+}
+
+.avatar {
+  display: grid;
+  width: 5rem;
+  height: 5rem;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, color.$accent, color.$accent-deep);
+}
+
+.settings {
+  overflow: hidden;
+  margin-top: token.$space-5;
+  border: token.$border-width-thin solid color.$border-soft;
+  border-radius: token.$radius-card;
+  background: color.$surface-card;
+
+  button {
+    display: flex;
+    width: 100%;
+    min-height: 4rem;
+    padding: 0 token.$space-4;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    border-bottom: token.$border-width-thin solid color.$border-soft;
+    background: transparent;
+    color: color.$ink;
+    cursor: pointer;
+    font-size: token.$font-size-body;
+    text-align: left;
+  }
+
+  button:last-child {
+    border-bottom: 0;
+  }
+}
+
+.settingLabel,
+.settingValue {
+  display: flex;
+  align-items: center;
+  gap: token.$space-3;
+}
+
+.settingValue {
+  color: color.$ink-muted;
+  font-size: token.$font-size-label;
+}
+
+@include mixins.tablet-up {
+  .page {
+    padding-inline: token.$space-6;
+  }
+}

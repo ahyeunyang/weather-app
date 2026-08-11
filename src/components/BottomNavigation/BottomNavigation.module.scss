@@ -1,0 +1,85 @@
+@use '../../styles/tokens/color-tokens' as color;
+@use '../../styles/tokens/tokens' as token;
+
+.navigation {
+  position: fixed;
+  z-index: 20;
+  bottom: max(token.$space-3, env(safe-area-inset-bottom));
+  left: 50%;
+  display: grid;
+  width: min(calc(100% - token.$space-6), token.$bottom-navigation-max-width);
+  min-height: token.$bottom-navigation-height;
+  grid-template-columns: repeat(3, 1fr);
+  padding: token.$space-2 token.$space-3;
+  border: token.$border-width-thin solid color.$border-glass;
+  border-radius: token.$radius-navigation;
+  background: color.$surface-navigation;
+  box-shadow: 0 token.$space-2 token.$space-6 color.$shadow-soft;
+  backdrop-filter: blur(token.$blur-glass);
+  transform: translateX(-50%);
+}
+
+.item {
+  display: flex;
+  min-width: 0;
+  min-height: token.$touch-target-min;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: color.$ink-muted;
+  cursor: pointer;
+  flex-direction: column;
+  font-size: token.$font-size-caption;
+  font-weight: 500;
+  gap: token.$space-1;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+
+  &[aria-current='page'] {
+    color: color.$ink;
+    font-weight: 700;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.featured {
+  position: relative;
+}
+
+.weatherIcon {
+  display: grid;
+  width: token.$bottom-navigation-feature-size;
+  height: token.$bottom-navigation-feature-size;
+  margin-top: calc(token.$space-5 * -1);
+  place-items: center;
+  border: token.$border-width-thin solid color.$border-glass;
+  border-radius: 50%;
+  background: color.$light-main;
+  box-shadow: 0 token.$space-1 token.$space-3 color.$shadow-soft;
+  animation: weather-icon-change 0.35s ease-out both;
+}
+
+@keyframes weather-icon-change {
+  from {
+    opacity: 0;
+    transform: translateY(token.$space-1) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item,
+  .weatherIcon {
+    animation: none;
+    transition: none;
+  }
+}

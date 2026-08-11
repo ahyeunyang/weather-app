@@ -19,7 +19,7 @@ type WeatherLogoProps = {
 export function WeatherLogo({
   color = 'black',
   size = 'medium',
-  alt = 'Weather Character',
+  alt = 'Weddddy',
   decorative = false,
   className,
 }: WeatherLogoProps) {

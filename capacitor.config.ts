@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli'
 
 const config: CapacitorConfig = {
   appId: 'com.weathercharacter.app',
-  appName: 'Weather Character',
+  appName: 'Weddddy',
   webDir: 'dist',
   plugins: {
     SplashScreen: {

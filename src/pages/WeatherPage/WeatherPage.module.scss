@@ -1,0 +1,218 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/tokens/color-tokens' as color;
+@use '../../styles/tokens/tokens' as token;
+
+.page {
+  min-height: 100svh;
+  padding: max(token.$space-6, env(safe-area-inset-top)) token.$space-4
+    token.$page-bottom-space;
+  background:
+    radial-gradient(circle at 50% 42%, color.$light-main, transparent 38%),
+    linear-gradient(180deg, color.$background-page, color.$background-page-end);
+  color: color.$ink;
+}
+
+.content {
+  width: min(100%, token.$app-content-max-width);
+  margin: 0 auto;
+}
+
+.header,
+.summary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  color: color.$ink-soft;
+  font-size: token.$font-size-label;
+  gap: token.$space-2;
+
+  strong {
+    color: color.$ink;
+    font-size: token.$font-size-body;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: token.$space-1;
+
+  button {
+    display: grid;
+    width: token.$touch-target-min;
+    height: token.$touch-target-min;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: color.$ink-soft;
+    cursor: pointer;
+  }
+}
+
+.summary {
+  margin-top: token.$space-2;
+}
+
+.temperatureRow {
+  display: flex;
+  align-items: flex-start;
+
+  h1 {
+    margin: 0;
+    font-size: clamp(token.$font-size-title-max, 18vw, token.$font-size-temperature);
+    font-variant-numeric: tabular-nums;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    line-height: 0.95;
+  }
+
+  > span {
+    margin-top: token.$space-1;
+    font-size: token.$font-size-heading;
+    font-weight: 300;
+  }
+
+  small {
+    display: flex;
+    margin: token.$space-2 0 0 token.$space-2;
+    align-items: center;
+    color: color.$ink-muted;
+    font-size: token.$font-size-caption;
+    gap: token.$space-1;
+  }
+}
+
+.range {
+  display: flex;
+  margin-top: token.$space-2;
+  font-size: token.$font-size-label;
+  gap: token.$space-6;
+
+  span:first-child {
+    color: color.$temperature-low;
+  }
+
+  span:last-child {
+    color: color.$temperature-high;
+  }
+}
+
+.airQuality {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: token.$space-2;
+
+  span {
+    padding: token.$space-1 token.$space-2;
+    border: token.$border-width-thin solid color.$accent-mint;
+    border-radius: token.$radius-pill;
+    color: color.$accent-deep;
+    font-size: token.$font-size-caption;
+  }
+
+  span:last-child {
+    border-color: color.$accent-warm;
+    color: color.$temperature-high;
+  }
+}
+
+.currentCondition {
+  display: flex;
+  align-items: center;
+  margin-top: token.$space-6;
+  flex-direction: column;
+
+  p {
+    margin: token.$space-2 0 token.$space-1;
+    color: color.$ink-soft;
+    font-size: token.$font-size-label;
+  }
+
+  p > span {
+    color: color.$ink-muted;
+    font-size: token.$font-size-caption;
+  }
+
+  strong {
+    color: color.$ink;
+  }
+
+  time {
+    color: color.$ink-muted;
+    font-size: token.$font-size-caption;
+  }
+}
+
+.characterScene {
+  display: flex;
+  min-height: 19rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: token.$space-3;
+  flex-direction: column;
+
+  p {
+    margin: token.$space-2 0 0;
+    color: color.$ink-soft;
+    font-size: token.$font-size-label;
+  }
+}
+
+.characters {
+  width: min(94vw, token.$weather-character-max-width);
+}
+
+.moreLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: token.$space-3;
+  color: color.$ink-muted;
+  font-size: token.$font-size-label;
+  gap: token.$space-1;
+  text-decoration: none;
+}
+
+.details {
+  display: grid;
+  margin-top: token.$space-6;
+  gap: token.$space-3;
+  grid-template-columns: repeat(3, 1fr);
+
+  article {
+    display: flex;
+    min-width: 0;
+    padding: token.$space-4 token.$space-2;
+    align-items: center;
+    border: token.$border-width-thin solid color.$border-soft;
+    border-radius: token.$radius-card;
+    background: color.$surface-card;
+    box-shadow: 0 token.$space-1 token.$space-4 color.$shadow-card;
+    flex-direction: column;
+    gap: token.$space-2;
+  }
+
+  span {
+    color: color.$ink-muted;
+    font-size: token.$font-size-caption;
+  }
+
+  strong {
+    font-size: token.$font-size-body;
+  }
+}
+
+@include mixins.tablet-up {
+  .page {
+    padding-inline: token.$space-6;
+  }
+
+  .characterScene {
+    min-height: 23rem;
+  }
+}

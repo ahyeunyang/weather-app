@@ -1,16 +1,32 @@
-// Brand and weather colors
+// 브랜드 및 날씨 색상
 $sky-start: #eaf6ff;
 $sky-end: #b9dcf7;
 $ink: #10263a;
 $ink-soft: #526b7d;
+$ink-muted: #82909b;
 $accent: #83c9ff;
 $accent-deep: #287fbd;
+$accent-warm: #ff9b66;
+$accent-mint: #59cdb6;
+$temperature-low: #6878e8;
+$temperature-high: #ff7467;
 
-// Surface and effect colors
-$surface-strong: rgb(255 255 255 / 92%);
+// 배경 및 표면 색상
+$background-page: #f7fbfe;
+$background-page-end: #eaf5fb;
+$surface-card: #ffffff;
+$surface-muted: #eef6fb;
 $surface-soft: rgb(255 255 255 / 60%);
 $surface-glass: rgb(255 255 255 / 48%);
-$surface-glow: rgb(255 255 255 / 50%);
+$surface-navigation: rgb(255 255 255 / 92%);
 $border-glass: rgb(255 255 255 / 72%);
+$border-soft: #dceaf3;
 $light-main: #ffffff;
 $light-fill: #8ebfff;
+$shadow-soft: rgb(31 67 92 / 14%);
+$shadow-card: rgb(53 91 116 / 9%);
+
+// 추천 카테고리 색상
+$recommend-shop: #fff1e7;
+$recommend-eat: #e8f7f2;
+$recommend-play: #eaf0ff;

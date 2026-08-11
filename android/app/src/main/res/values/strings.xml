@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Weather Character</string>
-    <string name="title_activity_main">Weather Character</string>
+    <string name="app_name">Weddddy</string>
+    <string name="title_activity_main">Weddddy</string>
     <string name="package_name">com.weathercharacter.app</string>
     <string name="custom_url_scheme">com.weathercharacter.app</string>
 </resources>
