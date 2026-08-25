@@ -1,0 +1,7 @@
+@use 'tokens/tokens' as token;
+
+@mixin tablet-up {
+  @media (min-width: token.$breakpoint-tablet) {
+    @content;
+  }
+}

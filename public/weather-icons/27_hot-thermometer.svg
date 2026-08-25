@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="187" height="191" viewBox="0 0 187 191" role="img" aria-label="hot thermometer weather icon">
+  <defs>
+    <linearGradient id="body" x1="48" y1="24" x2="99" y2="171" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6662DC"/>
+      <stop offset="1" stop-color="#514DCC"/>
+    </linearGradient>
+    <linearGradient id="mercury" x1="68" y1="46" x2="79" y2="157" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F36558"/>
+      <stop offset="1" stop-color="#ED574D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Purple thermometer body -->
+  <path d="M72 17C87 17 99 29 99 44V119C105 125 108 133 108 142C108 162 92 178 72 178C52 178 37 162 37 142C37 133 40 125 46 119V44C46 29 57 17 72 17Z" fill="url(#body)"/>
+
+  <!-- White inner tube and bulb border -->
+  <path d="M72 30C77 30 81 34 81 39V128C87 132 91 137 91 143C91 154 83 162 72 162C61 162 53 154 53 143C53 137 57 132 63 128V39C63 34 67 30 72 30Z" fill="#FFFFFF"/>
+
+  <!-- Mercury -->
+  <path d="M72 42C75 42 77 44 77 47V133C83 135 87 139 87 144C87 152 80 158 72 158C64 158 57 152 57 144C57 139 61 135 67 133V47C67 44 69 42 72 42Z" fill="url(#mercury)"/>
+
+  <!-- Left yellow and right white scale marks -->
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <g stroke="#FFD22A">
+      <path d="M55 49H62"/>
+      <path d="M55 69H62"/>
+      <path d="M55 89H62"/>
+      <path d="M55 109H62"/>
+    </g>
+    <g stroke="#FFFFFF">
+      <path d="M82 49H90"/>
+      <path d="M82 69H90"/>
+      <path d="M82 89H90"/>
+      <path d="M82 109H90"/>
+    </g>
+  </g>
+</svg>

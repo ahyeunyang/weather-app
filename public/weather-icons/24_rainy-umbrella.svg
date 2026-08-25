@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186" height="221" viewBox="0 0 186 221" role="img" aria-label="rainy umbrella weather icon">
+  <defs>
+    <linearGradient id="umbrella-yellow" x1="36" y1="67" x2="135" y2="122" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC21C"/>
+      <stop offset="1" stop-color="#F7B900"/>
+    </linearGradient>
+    <linearGradient id="rain-blue" x1="39" y1="20" x2="133" y2="55" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#168FD0"/>
+      <stop offset="1" stop-color="#248FD0"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#rain-blue)">
+    <path d="M80 14 C86 21 84 31 79 32 C73 31 74 23 80 14 Z" transform="rotate(18 80 23)"/>
+    <path d="M108 27 C114 34 112 44 107 45 C101 44 102 36 108 27 Z" transform="rotate(18 108 36)"/>
+    <path d="M43 35 C49 42 47 52 42 53 C36 52 37 44 43 35 Z" transform="rotate(18 43 44)"/>
+    <path d="M68 40 C74 47 72 57 67 58 C61 57 62 49 68 40 Z" transform="rotate(18 68 49)"/>
+    <path d="M132 37 C138 44 136 54 131 55 C125 54 126 46 132 37 Z" transform="rotate(18 132 46)"/>
+  </g>
+  <path d="M20 115 C27 79 51 59 83 58 C116 59 141 79 147 114 C148 119 144 121 140 117 C132 109 120 108 110 118 C101 109 92 109 83 118 C74 109 64 109 55 118 C45 108 33 109 25 117 C21 121 18 119 20 115 Z" fill="url(#umbrella-yellow)"/>
+  <path d="M83 59 C70 76 61 97 55 117 M83 59 C96 76 104 97 110 117" fill="none" stroke="#F2B500" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M83 116 V160 C83 175 63 175 63 161" fill="none" stroke="#5B55D6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M83 58 V53" fill="none" stroke="#F2B500" stroke-width="6" stroke-linecap="round"/>
+</svg>

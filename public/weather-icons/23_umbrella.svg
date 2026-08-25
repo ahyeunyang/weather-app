@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="204" height="216" viewBox="0 0 204 216" role="img" aria-label="umbrella weather icon">
+  <defs>
+    <linearGradient id="umbrella-yellow" x1="38" y1="42" x2="143" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC21C"/>
+      <stop offset="1" stop-color="#F7B900"/>
+    </linearGradient>
+    <linearGradient id="handle-purple" x1="87" y1="96" x2="78" y2="169" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6257DC"/>
+      <stop offset="1" stop-color="#5853D2"/>
+    </linearGradient>
+  </defs>
+  <path d="M22 94 C29 57 54 34 89 33 C125 34 151 57 158 94 C159 99 155 101 151 97 C143 89 129 88 118 99 C108 89 98 89 89 99 C80 89 69 89 59 99 C48 88 35 89 27 97 C23 101 20 99 22 94 Z" fill="url(#umbrella-yellow)"/>
+  <path d="M89 34 C75 52 65 75 59 98 M89 34 C103 52 112 75 118 98" fill="none" stroke="#F2B500" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M89 96 V156 C89 171 69 171 69 157" fill="none" stroke="url(#handle-purple)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M89 33 V28" fill="none" stroke="#F2B500" stroke-width="6" stroke-linecap="round"/>
+</svg>

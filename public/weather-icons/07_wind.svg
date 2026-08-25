@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="194" height="173" viewBox="0 0 194 173" role="img" aria-label="wind weather icon">
+  <defs>
+    <linearGradient id="wind-blue" x1="28" y1="52" x2="158" y2="151" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4CA5DB"/>
+      <stop offset="1" stop-color="#59A9DC"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#wind-blue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 92 C62 85 82 86 103 88 C120 90 136 84 140 70 C144 57 137 48 127 47 C116 45 105 52 103 61 C101 68 104 74 109 77"/>
+    <path d="M31 116 C54 107 75 108 94 116 C108 122 120 131 133 132 C145 134 154 127 154 117 C154 108 148 103 141 103 C134 103 129 107 127 113"/>
+    <path d="M52 133 C66 129 80 132 90 139 C99 145 101 152 97 157 C93 163 84 160 83 155"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+@use '../../styles/tokens/tokens' as token;
+
+.icon {
+  display: block;
+  width: token.$space-6;
+  height: token.$space-6;
+  object-fit: contain;
+}

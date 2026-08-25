@@ -1,0 +1,89 @@
+// 간격 토큰
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-2-5: 0.625rem;
+$space-3: 0.75rem;
+$space-3-5: 0.875rem;
+$space-4: 1rem;
+$space-4-5: 1.125rem;
+$space-5: 1.25rem;
+$space-6: 1.5rem;
+
+// 타이포그래피 토큰
+$font-size-caption: 0.72rem;
+$font-size-label: 0.78rem;
+$font-size-body: 1rem;
+$font-size-body-large: 1.08rem;
+$font-size-title-min: 2rem;
+$font-size-title-max: 4.5rem;
+$font-weight-strong: 650;
+$font-family-sans:
+  Inter,
+  Pretendard,
+  "Noto Sans KR",
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  sans-serif;
+$font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+// 모서리 및 효과 토큰
+$border-width-thin: 0.0625rem;
+$radius-code: 0.375rem;
+$radius-pill: 62.4375rem;
+$blur-glass: 1rem;
+$blur-glow: 4.375rem;
+
+// 레이아웃 토큰
+$viewport-min-width: 20rem;
+$content-max-width: 67.5rem;
+$character-stage-width: 28.75rem;
+$intro-copy-width: 40rem;
+$description-width: 31.25rem;
+$glow-size: 35rem;
+$header-offset: 6rem;
+$header-offset-mobile: 4.75rem;
+$copy-overlap: -1.25rem;
+$breakpoint-tablet: 48rem;
+
+// 정적 에셋 크기 토큰
+$weather-icon-size-small: 2rem;
+$weather-icon-size-medium: 3rem;
+$weather-icon-size-large: 5rem;
+$weather-icon-size-hero: 8rem;
+$logo-size-small: 1.5rem;
+$logo-size-medium: 3rem;
+$logo-size-large: 5rem;
+
+// 모바일 커머스 레이아웃
+$mobile-app-width: 24.375rem;
+$bottom-nav-height: 4.75rem;
+$product-card-image-height: 9.5rem;
+$product-card-image-height-small: 7.25rem;
+$shopping-header-height: 4rem;
+$radius-card: 1.25rem;
+$radius-card-small: 0.875rem;
+
+// 20rem~24.375rem 모바일 화면에서 비례 조정되는 커머스 값
+$commerce-gutter-fluid: clamp(1.5rem, 8.21vw, 2rem);
+$commerce-gap-small-fluid: clamp(0.5rem, 2.56vw, 0.625rem);
+$commerce-gap-medium-fluid: clamp(0.75rem, 3.08vw, 1rem);
+$commerce-section-space-fluid: clamp(1.375rem, 7.18vw, 1.75rem);
+$commerce-heading-space-fluid: clamp(1.75rem, 9.23vw, 2.25rem);
+$commerce-main-visual-height-fluid: clamp(10.25rem, 51.28vw, 12.5rem);
+$commerce-feature-height-fluid: clamp(20rem, 94.36vw, 23rem);
+$commerce-eat-logo-mask-size: 100% auto;
+$commerce-product-cutout-width-fluid: clamp(8rem, 41.03vw, 10rem);
+$commerce-product-cutout-height-fluid: clamp(9.75rem, 49.23vw, 12rem);
+$commerce-product-overlap-fluid: clamp(-4.75rem, -19.49vw, -3.875rem);
+$commerce-eat-product-overlap-fluid: clamp(-6.5rem, -26.67vw, -5.25rem);
+$commerce-related-gap-fluid: clamp(0.5rem, 3.08vw, 0.75rem);
+$commerce-ad-height-fluid: clamp(5.25rem, 25.64vw, 6.25rem);
+$commerce-card-separator-fluid: clamp(0.75rem, 4.1vw, 1rem);
+$commerce-card-padding-fluid: clamp(1.5rem, 8.21vw, 2rem);
+$commerce-title-to-visual-fluid: clamp(1.5rem, 8.21vw, 2rem);
+$commerce-visual-to-copy-fluid: clamp(1.25rem, 6.15vw, 1.5rem);
+$commerce-card-bottom-fluid: clamp(2rem, 10.26vw, 2.5rem);
+$commerce-badge-blur: 0.5rem;
+$commerce-ad-badge-height: 1.625rem;

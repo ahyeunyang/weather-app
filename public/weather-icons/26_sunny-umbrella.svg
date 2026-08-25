@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="201" height="233" viewBox="0 0 201 233" role="img" aria-label="sunny umbrella weather icon">
+  <defs>
+    <linearGradient id="yellow" x1="46" y1="84" x2="139" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC21A"/>
+      <stop offset="1" stop-color="#F7B700"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="92" y1="132" x2="77" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6660DF"/>
+      <stop offset="1" stop-color="#5752D1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Simple sun: rays and an open semicircle, as in the reference. -->
+  <g fill="none" stroke="#FBB707" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M92 36V44"/>
+    <path d="M68 46L75 52"/>
+    <path d="M59 69H68"/>
+    <path d="M109 52L116 46"/>
+    <path d="M117 69H126"/>
+    <path d="M79 72V67C79 51 105 51 105 67V72"/>
+  </g>
+
+  <!-- Umbrella canopy -->
+  <path d="M33 130C39 99 61 80 92 76C123 80 145 99 152 129C154 135 149 138 145 133C137 125 125 125 116 135C107 126 100 126 92 135C84 126 74 126 65 135C56 125 45 126 38 134C34 138 31 135 33 130Z" fill="url(#yellow)"/>
+  <path d="M92 77C80 93 71 113 65 134M92 77C104 93 112 113 116 134" fill="none" stroke="#EFB100" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+
+  <!-- Umbrella handle -->
+  <path d="M92 134V176C92 192 74 193 74 179" fill="none" stroke="url(#purple)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

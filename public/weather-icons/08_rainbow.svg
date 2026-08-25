@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="rainbow weather icon">
+  <defs>
+    <clipPath id="rainbow-limit">
+      <rect x="0" y="0" width="256" height="163"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#rainbow-limit)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55 162 A73 73 0 0 1 201 162" stroke="#F65C4F" stroke-width="16"/>
+    <path d="M69 162 A59 59 0 0 1 187 162" stroke="#FFC21C" stroke-width="16"/>
+    <path d="M83 162 A45 45 0 0 1 173 162" stroke="#29BE9B" stroke-width="16"/>
+  </g>
+  <g fill="#EEEAE6" stroke="#DCD6D0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40.35 165.1 C32.25 165.1 30 158.8 30 153.85 C30 146.65 35.85 141.25 43.05 141.25 C46.65 132.7 54.75 129.1 63.75 131.8 C70.95 133.6 75.9 139.45 76.8 146.65 C83.55 146.2 89.4 151.6 89.4 158.35 C89.4 162.4 85.8 165.1 80.4 165.1 Z"/>
+    <path d="M177.35 165.1 C169.25 165.1 167 158.8 167 153.85 C167 146.65 172.85 141.25 180.05 141.25 C183.65 132.7 191.75 129.1 200.75 131.8 C207.95 133.6 212.9 139.45 213.8 146.65 C220.55 146.2 226.4 151.6 226.4 158.35 C226.4 162.4 222.8 165.1 217.4 165.1 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+@use '../../styles/tokens/color-tokens' as color;
+@use '../../styles/tokens/tokens' as token;
+
+.navigation {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  display: grid;
+  width: min(100%, token.$mobile-app-width);
+  height: calc(token.$bottom-nav-height + env(safe-area-inset-bottom));
+  padding: token.$commerce-gap-small-fluid token.$commerce-gap-medium-fluid env(safe-area-inset-bottom);
+  border-top: token.$border-width-thin solid color.$commerce-line;
+  background: color.$commerce-surface;
+  grid-template-columns: repeat(3, 1fr);
+  transform: translateX(-50%);
+  transition: transform 180ms ease;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: token.$space-1;
+    color: color.$commerce-muted;
+    font-size: token.$font-size-caption;
+    font-weight: token.$font-weight-strong;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  .active {
+    color: color.$commerce-accent;
+  }
+}
+
+.hidden {
+  transform: translate(-50%, 110%);
+}
+
+.iconPlaceholder {
+  width: token.$space-6;
+  height: token.$space-6;
+  border-radius: token.$radius-code;
+  background: color.$commerce-placeholder;
+}
+
+.active .iconPlaceholder {
+  background: color.$commerce-accent-soft;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation {
+    transition: none;
+  }
+}
