@@ -4,7 +4,7 @@
 
 현재 추가된 아이콘:
 
-- `search.svg`: 검색
+- `search.svg`: 쇼핑 상단 등에 사용하는 `24 × 24` 투명 배경 선형 검색 아이콘
 - `refresh.svg`: 새로고침
 - `weather-nav.svg`: 하단 날씨 메뉴
 - `shopping-nav.svg`: 하단 쇼핑 메뉴
@@ -16,8 +16,8 @@
 - `calendar.svg`, `clock.svg`: 날짜와 시간
 - `plus.svg`, `close.svg`, `checkmark.svg`, `more.svg`: 공통 조작
 - `jt-kakao.svg`: 큐레이션 섹션의 카카오톡 공유 버튼
-- `arrow-*.svg`: 이동 화살표
-- `chevron-*.svg`: 펼침과 단계 이동
+- `arrow-*.svg`: 이동 화살표. `arrow-right.svg`는 단일 상품 이미지의 오른쪽 중앙 버튼에 사용하는 흰색 `11 × 11` 아이콘
+- `chevron-*.svg`: 펼침과 단계 이동. `chevron-right.svg`는 쇼핑의 모든 상품 더보기 버튼에서 `5 × 9` 비율의 CSS 마스크로 사용하며 버튼 텍스트 색상을 상속
 
 추가로 필요한 아이콘:
 
@@ -28,7 +28,7 @@
 
 화면에서는 공통 `AppIcon` 컴포넌트를 사용합니다.
 
-쇼핑 화면의 원형 새로고침 버튼 내부에는 이 폴더의 `refresh.svg`를 직접 사용합니다. 아이콘 파일을 교체했는데 이전 모양이 남으면 `ShoppingPage.tsx`에 작성된 파일 경로의 쿼리 버전을 변경해 브라우저 캐시를 갱신합니다.
+쇼핑 화면의 검색 버튼과 원형 새로고침 버튼 내부에는 각각 이 폴더의 `search.svg`, `refresh.svg`를 사용합니다. 아이콘 파일을 교체했는데 이전 모양이 남으면 `src/components/AppIcon/icons.ts`에 작성된 파일 경로의 쿼리 버전을 변경해 브라우저 캐시를 갱신합니다.
 
 ```tsx
 <AppIcon name="search" />

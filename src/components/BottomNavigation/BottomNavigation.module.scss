@@ -1,6 +1,7 @@
 @use '../../styles/tokens/color-tokens' as color;
 @use '../../styles/tokens/tokens' as token;
-.navigation { position: fixed; z-index: 20; bottom: 0; left: 50%; display: grid; width: min(100%, token.$mobile-app-width); height: calc(token.$bottom-nav-height + env(safe-area-inset-bottom)); padding: token.$space-3 token.$commerce-page-gutter env(safe-area-inset-bottom); border-top: token.$border-width-thin solid color.$commerce-line; background: rgb(255 255 255 / 96%); grid-template-columns: repeat(3, 1fr); transform: translateX(-50%); backdrop-filter: blur(token.$blur-glass); a { display: grid; color: color.$commerce-ink; place-items: center; } }
+.navigation { position: fixed; z-index: 20; bottom: 0; left: 50%; display: grid; width: min(100%, token.$mobile-app-width); height: calc(token.$bottom-nav-height + env(safe-area-inset-bottom)); padding: token.$space-3 token.$commerce-page-gutter env(safe-area-inset-bottom); border-top: token.$border-width-thin solid color.$commerce-line; background: rgb(255 255 255 / 96%); grid-template-columns: repeat(3, 1fr); transform: translateX(-50%); transition: transform token.$bottom-nav-transition-duration ease; backdrop-filter: blur(token.$blur-glass); will-change: transform; a { display: grid; color: color.$commerce-ink; place-items: center; } }
+.hidden { pointer-events: none; transform: translate(-50%, 100%); }
 .icon { width: 2.3125rem; height: 1.375rem; background: currentcolor; mask-position: center; mask-repeat: no-repeat; mask-size: contain; }
 .weather { mask-image: url('/icons/ui/weather-nav.svg'); }
 .shopping { mask-image: url('/icons/ui/shopping-nav.svg'); }
