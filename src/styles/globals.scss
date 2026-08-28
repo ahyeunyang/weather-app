@@ -4,8 +4,9 @@
 
 :root {
   color: color.$ink;
-  background: color.$sky-end;
+  background: color.$app-background;
   font-family: token.$font-family-sans;
+  font-weight: token.$font-weight-light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,6 +15,7 @@
 
 body {
   overflow-x: hidden;
+  background: color.$app-background;
 }
 
 button,

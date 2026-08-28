@@ -1,55 +1,11 @@
 @use '../../styles/tokens/color-tokens' as color;
 @use '../../styles/tokens/tokens' as token;
-
-.navigation {
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  left: 50%;
-  display: grid;
-  width: min(100%, token.$mobile-app-width);
-  height: calc(token.$bottom-nav-height + env(safe-area-inset-bottom));
-  padding: token.$commerce-gap-small-fluid token.$commerce-gap-medium-fluid env(safe-area-inset-bottom);
-  border-top: token.$border-width-thin solid color.$commerce-line;
-  background: color.$commerce-surface;
-  grid-template-columns: repeat(3, 1fr);
-  transform: translateX(-50%);
-  transition: transform 180ms ease;
-
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: token.$space-1;
-    color: color.$commerce-muted;
-    font-size: token.$font-size-caption;
-    font-weight: token.$font-weight-strong;
-    flex-direction: column;
-    text-decoration: none;
-  }
-
-  .active {
-    color: color.$commerce-accent;
-  }
-}
-
-.hidden {
-  transform: translate(-50%, 110%);
-}
-
-.iconPlaceholder {
-  width: token.$space-6;
-  height: token.$space-6;
-  border-radius: token.$radius-code;
-  background: color.$commerce-placeholder;
-}
-
-.active .iconPlaceholder {
-  background: color.$commerce-accent-soft;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .navigation {
-    transition: none;
-  }
-}
+.navigation { position: fixed; z-index: 20; bottom: 0; left: 50%; display: grid; width: min(100%, token.$mobile-app-width); height: calc(token.$bottom-nav-height + env(safe-area-inset-bottom)); padding: token.$space-3 token.$commerce-page-gutter env(safe-area-inset-bottom); border-top: token.$border-width-thin solid color.$commerce-line; background: rgb(255 255 255 / 96%); grid-template-columns: repeat(3, 1fr); transform: translateX(-50%); backdrop-filter: blur(token.$blur-glass); a { display: grid; color: color.$commerce-ink; place-items: center; } }
+.icon { width: 2.3125rem; height: 1.375rem; background: currentcolor; mask-position: center; mask-repeat: no-repeat; mask-size: contain; }
+.weather { mask-image: url('/icons/ui/weather-nav.svg'); }
+.shopping { mask-image: url('/icons/ui/shopping-nav.svg'); }
+.mypage { mask-image: url('/icons/ui/mypage-nav.svg'); }
+.label { position: absolute; width: 0.0625rem; height: 0.0625rem; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.active .weather { mask-image: url('/icons/ui/weather-nav-active.svg'); }
+.active .shopping { mask-image: url('/icons/ui/shopping-nav-active.svg'); }
+.active .mypage { mask-image: url('/icons/ui/mypage-nav-active.svg'); }

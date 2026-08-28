@@ -4,8 +4,8 @@ export type WeatherLogoColor = 'black' | 'white'
 export type WeatherLogoSize = 'small' | 'medium' | 'large'
 
 const logoSources: Record<WeatherLogoColor, string> = {
-  black: '/logos/weather-logo-black-fixed-v2.svg',
-  white: '/logos/weather-logo-white-fixed-v2.svg',
+  black: '/logos/weddy-logo.svg',
+  white: '/logos/weddy-logo.svg',
 }
 
 type WeatherLogoProps = {
@@ -19,7 +19,7 @@ type WeatherLogoProps = {
 export function WeatherLogo({
   color = 'black',
   size = 'medium',
-  alt = 'Weather Character',
+  alt = 'Weddy',
   decorative = false,
   className,
 }: WeatherLogoProps) {

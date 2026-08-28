@@ -12,6 +12,7 @@ export const appIcons = {
   chevronUp: '/icons/ui/chevron-up.svg',
   clock: '/icons/ui/clock.svg',
   close: '/icons/ui/close.svg',
+  kakao: '/icons/ui/jt-kakao.svg',
   more: '/icons/ui/more.svg',
   plus: '/icons/ui/plus.svg',
   refresh: '/icons/ui/refresh.svg?v=20260813',

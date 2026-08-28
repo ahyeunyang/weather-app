@@ -6,19 +6,25 @@
 
 - `search.svg`: 검색
 - `refresh.svg`: 새로고침
+- `weather-nav.svg`: 하단 날씨 메뉴
+- `shopping-nav.svg`: 하단 쇼핑 메뉴
+- `mypage-nav.svg`: 하단 마이페이지 메뉴
+- `weather-nav-active.svg`: 활성 날씨 메뉴 채움 상태
+- `shopping-nav-active.svg`: 활성 쇼핑 메뉴 채움 상태
+- `mypage-nav-active.svg`: 활성 마이페이지 머리 채움 상태
 - `bag.svg`: 장바구니 또는 쇼핑백
 - `calendar.svg`, `clock.svg`: 날짜와 시간
 - `plus.svg`, `close.svg`, `checkmark.svg`, `more.svg`: 공통 조작
+- `jt-kakao.svg`: 큐레이션 섹션의 카카오톡 공유 버튼
 - `arrow-*.svg`: 이동 화살표
 - `chevron-*.svg`: 펼침과 단계 이동
 
 추가로 필요한 아이콘:
 
-- `weather.svg`: 하단 날씨 메뉴
-- `shopping.svg`: 하단 쇼핑 메뉴
-- `user.svg`: 마이페이지
 - `share.svg`: 공유
 - `heart.svg`: 찜
+
+하단 내비게이션 SVG는 CSS `mask-image`로 출력합니다. 비활성 상태는 검은색 아웃라인, 활성 상태는 메뉴별 지정 영역을 채운 SVG로 교체합니다. 원본 SVG의 서로 다른 `viewBox` 비율은 `mask-size: contain`으로 유지합니다.
 
 화면에서는 공통 `AppIcon` 컴포넌트를 사용합니다.
 

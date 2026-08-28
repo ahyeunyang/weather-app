@@ -14,11 +14,14 @@ $font-size-caption: 0.72rem;
 $font-size-label: 0.78rem;
 $font-size-body: 1rem;
 $font-size-body-large: 1.08rem;
+$font-size-commerce-hero-title: 1.875rem;
 $font-size-title-min: 2rem;
 $font-size-title-max: 4.5rem;
 $font-weight-strong: 650;
+$font-weight-semibold: 600;
+$font-weight-light: 300;
+$font-weight-regular: 400;
 $font-family-sans:
-  Inter,
   Pretendard,
   "Noto Sans KR",
   system-ui,
@@ -58,7 +61,7 @@ $logo-size-large: 5rem;
 
 // 모바일 커머스 레이아웃
 $mobile-app-width: 24.375rem;
-$bottom-nav-height: 4.75rem;
+$bottom-nav-height: 4rem;
 $product-card-image-height: 9.5rem;
 $product-card-image-height-small: 7.25rem;
 $shopping-header-height: 4rem;
@@ -87,3 +90,52 @@ $commerce-visual-to-copy-fluid: clamp(1.25rem, 6.15vw, 1.5rem);
 $commerce-card-bottom-fluid: clamp(2rem, 10.26vw, 2.5rem);
 $commerce-badge-blur: 0.5rem;
 $commerce-ad-badge-height: 1.625rem;
+
+// 아이폰 17 기준(402 단위 폭) 사러 화면 비율 토큰
+$commerce-top-gutter: clamp(1rem, 4.48vw, 1.125rem);
+$commerce-bottom-buffer: 1.5rem;
+$commerce-page-gutter: clamp(1rem, 4.48vw, 1.125rem);
+$commerce-tab-gap: clamp(0.75rem, 3.98vw, 1rem);
+$commerce-tab-font-size: 1.625rem;
+$commerce-icon-button-size: 1.75rem;
+$commerce-weather-top: clamp(1.75rem, 7.96vw, 2rem);
+$commerce-weather-bottom: clamp(1.5rem, 6.97vw, 1.75rem);
+$commerce-weather-title: $font-size-commerce-hero-title;
+$commerce-caption-font-size: 0.875rem;
+$commerce-update-font-size: 0.875rem;
+$commerce-subtitle-font-size: 1rem;
+$commerce-card-font-size: 0.875rem;
+$commerce-section-title: 1.125rem;
+$commerce-refresh-size: 1.875rem;
+$commerce-hero-height: clamp(14.5rem, 63.68vw, 16rem);
+$commerce-hero-weather-width: 19.75rem;
+$commerce-hero-weather-height: 10.875rem;
+$commerce-hero-copy-bottom: 1.125rem;
+$commerce-hero-product-right: 0.5rem;
+$commerce-hero-product-bottom: 0.75rem;
+$commerce-hero-product-width: 42%;
+$commerce-hero-product-height: 58%;
+$commerce-related-gap: clamp(0.5rem, 2.49vw, 0.625rem);
+$commerce-related-padding: 1.5rem;
+$commerce-related-item-width: calc((100% - (3 * #{$commerce-related-gap})) / 4);
+$commerce-ad-height: clamp(5.75rem, 24.88vw, 6.25rem);
+$commerce-ad-image-size: 7.5rem;
+$commerce-ad-badge-width: 1.625rem;
+$commerce-ad-font-size: 0.625rem;
+$commerce-ad-title-font-size: 1.5rem;
+$commerce-section-top: clamp(1.5rem, 6.97vw, 1.75rem);
+$commerce-section-bottom: clamp(2rem, 8.96vw, 2.25rem);
+$commerce-section-gap: 2.25rem;
+$commerce-provider-size: clamp(1rem, 4.48vw, 1.125rem);
+$commerce-provider-gap: 0.1875rem;
+$commerce-section-action: 1.625rem;
+$commerce-action-dot: 0.625rem;
+$commerce-content-gap: clamp(1.25rem, 5.97vw, 1.5rem);
+$commerce-list-row-height: clamp(4.75rem, 20.9vw, 5.25rem);
+$commerce-grid-gap: clamp(0.5rem, 2.49vw, 0.625rem);
+$commerce-card-slide-width: 31.5%;
+$commerce-round-tab-size: 5rem;
+$commerce-round-tab-font-size: 0.75rem;
+$commerce-circle-slide-width: 72%;
+$commerce-single-action: 1.75rem;
+$commerce-product-row-gap: 1.5rem;
