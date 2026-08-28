@@ -24,3 +24,4 @@ node-v*-win-x64.zip
 *.njsproj
 *.sln
 *.sw?
+.history/
